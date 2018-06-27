@@ -1,0 +1,96 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 5460ed41be8a42ffa320bcdd95b86c9caae290c342f3b57573b89278e9ae996d
+
+name:           dbgen
+version:        0.1.0.0
+description:    Please see the README on Github at <https://github.com/githubuser/beamtest#readme>
+homepage:
+bug-reports:
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2018 Author name here
+license:        BSD3
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/dbgen
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+
+     ,sqlite-simple
+     ,mysql-simple
+
+     ,aeson
+     ,text
+     ,bytestring
+
+     ,directory
+     ,process
+
+     ,fgl
+     ,containers
+     ,boxes
+
+     ,time
+     ,monad-loops
+
+     ,template-haskell
+     ,th-lift
+     ,th-lift-instances
+     ,ghc-prim
+
+     ,parsec
+     ,parsec3-numbers
+
+     ,async
+
+  exposed-modules:
+     PreCompilation.DataTypes.DataTypes
+     ,PreCompilation.DataTypes.Misc
+     ,PreCompilation.DataTypes.Table
+     ,PreCompilation.DataTypes.Transform
+     ,PreCompilation.Initialize
+     ,PreCompilation.ParsingUtils
+     ,PreCompilation.Utilities
+     ,PreCompilation.MkMainObjects
+     ,PreCompilation.TH
+
+     ,Compilation.MkBoilerPlate
+     ,Compilation.MkPipes
+     ,Compilation.Utilities
+     ,Compilation.TH
+     ,Compilation.InputFile
+
+     ,PostCompilation.FillTables
+     ,PostCompilation.MetaTable
+     ,PostCompilation.Utilities
+
+
+  other-modules:
+  default-language: Haskell2010
+
+executable dbgen
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    ,dbgen
+    ,text
+    ,sqlite-simple
+    ,mysql-simple
+
+    ,process
+  other-modules:
+  default-language: Haskell2010

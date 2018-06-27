@@ -1,0 +1,82 @@
+{
+    "name": "bulkmod", 
+    "launches": [
+        {
+            "fworker": {
+                "category": "", 
+                "query": "{}", 
+                "name": "sherlock", 
+                "env": {}
+            }, 
+            "trackers": [], 
+            "ip": "10.210.30.232", 
+            "fw_id": 1661, 
+            "state": "RUNNING", 
+            "host": "sh-10-29.local", 
+            "launch_dir": "/scratch/users/ksb/fireworks", 
+            "action": null, 
+            "launch_id": 2304, 
+            "state_history": [
+                {
+                    "updated_on": "2017-10-16T05:47:28.835735", 
+                    "state": "RESERVED", 
+                    "reservation_id": "17712094", 
+                    "created_on": "2017-10-16T05:47:28.835729"
+                }, 
+                {
+                    "updated_on": "2017-10-16T09:14:06.571519", 
+                    "state": "RUNNING", 
+                    "created_on": "2017-10-16T09:14:06.571514"
+                }
+            ]
+        }
+    ], 
+    "fw_id": 1661, 
+    "state": "RUNNING", 
+    "created_on": "2017-10-16T05:39:43.240876", 
+    "updated_on": "2017-10-16T09:14:06.573870", 
+    "spec": {
+        "_queueadapter": {
+            "ntasks_per_node": 16, 
+            "_fw_name": "CommonAdapter", 
+            "rocket_launch": "cd /scratch/users/ksb/fireworks;rlaunch singleshot", 
+            "_fw_q_type": "SLURM", 
+            "queue": "owners,iric,normal", 
+            "logdir": "/scratch/users/ksb/fireworks/logs/", 
+            "nodes": 1, 
+            "pre_rocket": "source /scratch/PI/suncat/sw/env.bash;source ~/scripts/rc/RCsher.sh;export OMP_NUM_THREADS=1;export PYTHONPATH=/scratch/users/ksb/gpaw/ggafirst/install/lib/python2.7/site-packages:/scratch/users/ksb/gpaw/gpaw_sg15/lib/python2.7/site-packages:$PYTHONPATH;export PATH=/scratch/users/ksb/gpaw/ggafirst/install/bin:$PATH;export GPAW_SETUP_PATH=/scratch/users/ksb/gpaw/gpaw_sg15/norm_conserving_setups", 
+            "walltime": "40:00:00"
+        }, 
+        "_fworker": "sherlock", 
+        "params": {
+            "jobkind": "bulkmod", 
+            "xc": "mBEEF", 
+            "strain": 0.03, 
+            "bulkvacancy_json": "[]", 
+            "dftcode": "gpaw", 
+            "dwrat": 10, 
+            "kptden": 2, 
+            "structure": "hexagonal", 
+            "bulkscale_json": "[1, 1, 1]", 
+            "maxstep": 500, 
+            "parent": 945, 
+            "fmax": 0.05, 
+            "mixing": 0.1, 
+            "psp": "paw", 
+            "econv": 0.0005, 
+            "pw": 1700, 
+            "kind": "bulk", 
+            "name": "Zn-hcp_bulkmod", 
+            "nmix": 10, 
+            "nbands": -12, 
+            "inittraj_pckl": "ccopy_reg\n_reconstructor\np0\n(case.atoms\nAtoms\np1\nc__builtin__\nobject\np2\nNtp3\nRp4\n(dp5\nS'info'\np6\n(dp7\nsS'_celldisp'\np8\ncnumpy.core.multiarray\n_reconstruct\np9\n(cnumpy\nndarray\np10\n(I0\ntp11\nS'b'\np12\ntp13\nRp14\n(I1\n(I3\nI1\ntp15\ncnumpy\ndtype\np16\n(S'f8'\np17\nI0\nI1\ntp18\nRp19\n(I3\nS'<'\np20\nNNNI-1\nI-1\nI0\ntp21\nbI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np22\ntp23\nbsS'arrays'\np24\n(dp25\nS'positions'\np26\ng9\n(g10\n(I0\ntp27\ng12\ntp28\nRp29\n(I1\n(I2\nI3\ntp30\ng19\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x15N]\\xd8\\xc3\\xa9\\xf4?<\\xb2?2\\x18\\xdc\\xe7?loZ:\\xa2n\\x04@'\np31\ntp32\nbsS'numbers'\np33\ng9\n(g10\n(I0\ntp34\ng12\ntp35\nRp36\n(I1\n(I2\ntp37\ng16\n(S'i8'\np38\nI0\nI1\ntp39\nRp40\n(I3\nS'<'\np41\nNNNI-1\nI-1\nI0\ntp42\nbI00\nS'\\x1e\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x1e\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np43\ntp44\nbsS'magmoms'\np45\ng9\n(g10\n(I0\ntp46\ng12\ntp47\nRp48\n(I1\n(I2\ntp49\ng19\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np50\ntp51\nbssS'_pbc'\np52\ng9\n(g10\n(I0\ntp53\ng12\ntp54\nRp55\n(I1\n(I3\ntp56\ng16\n(S'b1'\np57\nI0\nI1\ntp58\nRp59\n(I3\nS'|'\np60\nNNNI-1\nI-1\nI0\ntp61\nbI00\nS'\\x01\\x01\\x01'\np62\ntp63\nbsS'_calc'\np64\n(iase.calculators.singlepoint\nSinglePointCalculator\np65\n(dp66\nS'name'\np67\nVgpaw\np68\nsS'parameters'\np69\ng0\n(case.calculators.calculator\nParameters\np70\nc__builtin__\ndict\np71\n(dp72\ntp73\nRp74\nsS'results'\np75\n(dp76\nS'energy'\np77\nF-123.29369652406734\nsS'dipole'\np78\ng9\n(g10\n(I0\ntp79\ng12\ntp80\nRp81\n(I1\n(I3\ntp82\ng19\nI00\nS'\\xac\\x9ebII\\xde\\xfe?\\x08\\xeb\\x96[\\xd2\\xc4\\xf1\\xbff3-u\\xd6\\xbbm?'\np83\ntp84\nbsS'forces'\np85\ng9\n(g10\n(I0\ntp86\ng12\ntp87\nRp88\n(I1\n(I2\nI3\ntp89\ng19\nI00\nS'\\xafq?2\\x04$Q<\\xafq?2\\x04$a<\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\xafq?2\\x04$Q<\\xafq?2\\x04$a\\xbc\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np90\ntp91\nbssS'label'\np92\nNsS'prefix'\np93\nNsS'directory'\np94\nNsS'atoms'\np95\ng0\n(g1\ng2\nNtp96\nRp97\n(dp98\ng6\n(dp99\nsg8\ng9\n(g10\n(I0\ntp100\ng12\ntp101\nRp102\n(I1\n(I3\nI1\ntp103\ng19\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np104\ntp105\nbsg24\n(dp106\ng26\ng9\n(g10\n(I0\ntp107\ng12\ntp108\nRp109\n(I1\n(I2\nI3\ntp110\ng19\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x15N]\\xd8\\xc3\\xa9\\xf4?<\\xb2?2\\x18\\xdc\\xe7?loZ:\\xa2n\\x04@'\np111\ntp112\nbsg33\ng9\n(g10\n(I0\ntp113\ng12\ntp114\nRp115\n(I1\n(I2\ntp116\ng40\nI00\nS'\\x1e\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x1e\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np117\ntp118\nbsg45\ng9\n(g10\n(I0\ntp119\ng12\ntp120\nRp121\n(I1\n(I2\ntp122\ng19\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np123\ntp124\nbssg52\ng9\n(g10\n(I0\ntp125\ng12\ntp126\nRp127\n(I1\n(I3\ntp128\ng59\nI00\nS'\\x01\\x01\\x01'\np129\ntp130\nbsg64\nNsS'_cell'\np131\ng9\n(g10\n(I0\ntp132\ng12\ntp133\nRp134\n(I1\n(I3\nI3\ntp135\ng19\nI00\nS'\\x14N]\\xd8\\xc3\\xa9\\x04@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x11N]\\xd8\\xc3\\xa9\\xf4\\xbf\\xad\\xc5\\xaf%\\x12\\xe5\\x01@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00moZ:\\xa2n\\x14@'\np136\ntp137\nbsS'_constraints'\np138\n(lp139\nsbsbsg131\ng9\n(g10\n(I0\ntp140\ng12\ntp141\nRp142\n(I1\n(I3\nI3\ntp143\ng19\nI00\nS'\\x14N]\\xd8\\xc3\\xa9\\x04@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x11N]\\xd8\\xc3\\xa9\\xf4\\xbf\\xad\\xc5\\xaf%\\x12\\xe5\\x01@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00moZ:\\xa2n\\x14@'\np144\ntp145\nbsg138\n(lp146\nsb.", 
+            "sigma": 0.1
+        }, 
+        "_launch_dir": "/scratch/users/ksb/fireworks/jobs/bulkmod_2017_10_15_22_39_43", 
+        "_tasks": [
+            {
+                "_fw_name": "{{standardScripts.GetBulkModulus}}"
+            }
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+2017-12-08 15:56:19,902 INFO Hostname/IP lookup (this will take a few seconds)
+2017-12-08 15:56:19,903 INFO Launching Rocket
+2017-12-08 15:56:20,977 INFO RUNNING fw_id: 4232 in directory: /scratch1/scratchdirs/krisb/fireworks/jobs/relax_2017_12_08_15_55_52
+2017-12-08 15:56:21,011 INFO Task started: {{standardScripts.VaspJob}}.
+Initializing VASP calculator...
+Generating VASP Input files with ASE

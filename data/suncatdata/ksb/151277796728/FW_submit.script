@@ -1,0 +1,16 @@
+#!/bin/bash -l
+
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=32
+#SBATCH --qos=normal
+#SBATCH --time=00:18:00
+#SBATCH --partition=debug
+#SBATCH --job-name=relax
+#SBATCH --output=relax-%j.out
+#SBATCH --error=relax-%j.error
+
+
+cd /scratch1/scratchdirs/krisb/fireworks/jobs/relax_2017_12_08_15_55_52
+cd /scratch1/scratchdirs/krisb/fireworks;rlaunch singleshot --fw_id 4232
+
+# CommonAdapter (SLURM) completed writing Template

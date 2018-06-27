@@ -1,0 +1,117 @@
+{
+    "name": "latticeopt", 
+    "archived_launches": [
+        {
+            "fworker": {
+                "category": "", 
+                "query": "{}", 
+                "name": "sherlock", 
+                "env": {}
+            }, 
+            "trackers": [], 
+            "ip": "10.210.29.180", 
+            "fw_id": 287, 
+            "state": "FIZZLED", 
+            "host": "sh-17-28.local", 
+            "launch_dir": "/scratch/users/ksb/fireworks/jobs/latticeopt_2017_10_11_17_00_01", 
+            "action": null, 
+            "launch_id": 287, 
+            "state_history": [
+                {
+                    "updated_on": "2017-10-12T00:06:02.230942", 
+                    "state": "RESERVED", 
+                    "reservation_id": "17681977", 
+                    "created_on": "2017-10-12T00:06:02.230936"
+                }, 
+                {
+                    "updated_on": "2017-10-12T03:05:30.485151", 
+                    "state": "RUNNING", 
+                    "created_on": "2017-10-12T03:05:30.462943"
+                }, 
+                {
+                    "state": "FIZZLED", 
+                    "created_on": "2017-10-13T00:09:35.130545"
+                }
+            ]
+        }
+    ], 
+    "fw_id": 287, 
+    "state": "RUNNING", 
+    "created_on": "2017-10-12T00:00:01.811267", 
+    "launches": [
+        {
+            "fworker": {
+                "category": "", 
+                "query": "{}", 
+                "name": "sherlock", 
+                "env": {}
+            }, 
+            "trackers": [], 
+            "ip": "10.210.30.122", 
+            "fw_id": 287, 
+            "state": "RUNNING", 
+            "host": "gpu-14-5.local", 
+            "launch_dir": "/scratch/users/ksb/fireworks", 
+            "action": null, 
+            "launch_id": 907, 
+            "state_history": [
+                {
+                    "updated_on": "2017-10-13T00:14:36.380960", 
+                    "state": "RESERVED", 
+                    "reservation_id": "17690970", 
+                    "created_on": "2017-10-13T00:14:36.380953"
+                }, 
+                {
+                    "updated_on": "2017-10-13T17:40:45.973645", 
+                    "state": "RUNNING", 
+                    "created_on": "2017-10-13T17:40:45.973639"
+                }
+            ]
+        }
+    ], 
+    "updated_on": "2017-10-13T17:40:45.975701", 
+    "spec": {
+        "_queueadapter": {
+            "ntasks_per_node": 16, 
+            "_fw_name": "CommonAdapter", 
+            "rocket_launch": "cd /scratch/users/ksb/fireworks;rlaunch singleshot", 
+            "_fw_q_type": "SLURM", 
+            "queue": "owners,iric,normal", 
+            "logdir": "/scratch/users/ksb/fireworks/logs/", 
+            "nodes": 1, 
+            "pre_rocket": "source /scratch/PI/suncat/sw/env.bash;source ~/scripts/rc/RCsher.sh;export OMP_NUM_THREADS=1;export PYTHONPATH=/scratch/users/ksb/gpaw/ggafirst/install/lib/python2.7/site-packages:/scratch/users/ksb/gpaw/gpaw_sg15/lib/python2.7/site-packages:$PYTHONPATH;export PATH=/scratch/users/ksb/gpaw/ggafirst/install/bin:$PATH;export GPAW_SETUP_PATH=/scratch/users/ksb/gpaw/gpaw_sg15/norm_conserving_setups", 
+            "walltime": "40:00:00"
+        }, 
+        "_fworker": "sherlock", 
+        "params": {
+            "jobkind": "latticeopt", 
+            "xc": "mBEEF", 
+            "nbands": -12, 
+            "xtol": 0.005, 
+            "pw": 600, 
+            "dwrat": 10, 
+            "kptden": 4, 
+            "comments": null, 
+            "structure": "hexagonal", 
+            "bulkscale_json": "[1, 1, 1]", 
+            "maxstep": 500, 
+            "dftcode": "gpaw", 
+            "fmax": 0.05, 
+            "mixing": 0.1, 
+            "psp": "sg15", 
+            "econv": 0.0005, 
+            "kind": "bulk", 
+            "name": "Zr-hcp", 
+            "nmix": 10, 
+            "bulkvacancy_json": "[]", 
+            "inittraj_pckl": "ccopy_reg\n_reconstructor\np0\n(case.atoms\nAtoms\np1\nc__builtin__\nobject\np2\nNtp3\nRp4\n(dp5\nS'info'\np6\n(dp7\nsS'_celldisp'\np8\ncnumpy.core.multiarray\n_reconstruct\np9\n(cnumpy\nndarray\np10\n(I0\ntp11\nS'b'\np12\ntp13\nRp14\n(I1\n(I3\nI1\ntp15\ncnumpy\ndtype\np16\n(S'f8'\np17\nI0\nI1\ntp18\nRp19\n(I3\nS'<'\np20\nNNNI-1\nI-1\nI0\ntp21\nbI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np22\ntp23\nbsS'_calc'\np24\n(iase.calculators.singlepoint\nSinglePointCalculator\np25\n(dp26\nS'name'\np27\nVgpaw\np28\nsS'parameters'\np29\ng0\n(case.calculators.calculator\nParameters\np30\nc__builtin__\ndict\np31\n(dp32\ntp33\nRp34\nsS'results'\np35\n(dp36\nS'energy'\np37\nF1899.522713399205\nsS'dipole'\np38\ng9\n(g10\n(I0\ntp39\ng12\ntp40\nRp41\n(I1\n(I3\ntp42\ng19\nI00\nS'\\x01\\x06x\\xc4\\xeaq\\t@\\xb9B\\xbe\\xf0\\xa2\\xeb\\xfd\\xbf\\x89\\xfaT\\xae\\xcb\\xed[\\xbf'\np43\ntp44\nbsS'forces'\np45\ng9\n(g10\n(I0\ntp46\ng12\ntp47\nRp48\n(I1\n(I2\nI3\ntp49\ng19\nI00\nS'\\x87*_K\\x06\\xb6\\x89<\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x87*_K\\x06\\xb6\\x89<\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np50\ntp51\nbssS'label'\np52\nNsS'prefix'\np53\nNsS'directory'\np54\nNsS'atoms'\np55\ng0\n(g1\ng2\nNtp56\nRp57\n(dp58\ng6\n(dp59\nsg8\ng9\n(g10\n(I0\ntp60\ng12\ntp61\nRp62\n(I1\n(I3\nI1\ntp63\ng19\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np64\ntp65\nbsg24\nNsS'arrays'\np66\n(dp67\nS'positions'\np68\ng9\n(g10\n(I0\ntp69\ng12\ntp70\nRp71\n(I1\n(I2\nI3\ntp72\ng19\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\xfaSCne\\xcb\\xf9?\\xe6\\xe85\\xf6\\xf1\\xc8\\xed?\\x05e\\xc7\\xa0X\\x9c\\x04@'\np73\ntp74\nbsS'numbers'\np75\ng9\n(g10\n(I0\ntp76\ng12\ntp77\nRp78\n(I1\n(I2\ntp79\ng16\n(S'i8'\np80\nI0\nI1\ntp81\nRp82\n(I3\nS'<'\np83\nNNNI-1\nI-1\nI0\ntp84\nbI00\nS'(\\x00\\x00\\x00\\x00\\x00\\x00\\x00(\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np85\ntp86\nbsS'magmoms'\np87\ng9\n(g10\n(I0\ntp88\ng12\ntp89\nRp90\n(I1\n(I2\ntp91\ng19\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np92\ntp93\nbssS'_pbc'\np94\ng9\n(g10\n(I0\ntp95\ng12\ntp96\nRp97\n(I1\n(I3\ntp98\ng16\n(S'b1'\np99\nI0\nI1\ntp100\nRp101\n(I3\nS'|'\np102\nNNNI-1\nI-1\nI0\ntp103\nbI00\nS'\\x01\\x01\\x01'\np104\ntp105\nbsS'_cell'\np106\ng9\n(g10\n(I0\ntp107\ng12\ntp108\nRp109\n(I1\n(I3\nI3\ntp110\ng19\nI00\nS'\\xf8SCne\\xcb\\t@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\xf5SCne\\xcb\\xf9\\xbf\\xabn\\xa8x\\xb5V\\x06@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00b\\x02ww%\\xbc\\xb6<\\xd7\\x81E\\x04e\\xb0\\xc3<\\x05e\\xc7\\xa0X\\x9c\\x14@'\np111\ntp112\nbsS'_constraints'\np113\n(lp114\nsbsbsg66\n(dp115\ng68\ng9\n(g10\n(I0\ntp116\ng12\ntp117\nRp118\n(I1\n(I2\nI3\ntp119\ng19\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\xfaSCne\\xcb\\xf9?\\xe6\\xe85\\xf6\\xf1\\xc8\\xed?\\x05e\\xc7\\xa0X\\x9c\\x04@'\np120\ntp121\nbsg75\ng9\n(g10\n(I0\ntp122\ng12\ntp123\nRp124\n(I1\n(I2\ntp125\ng82\nI00\nS'(\\x00\\x00\\x00\\x00\\x00\\x00\\x00(\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np126\ntp127\nbsg87\ng9\n(g10\n(I0\ntp128\ng12\ntp129\nRp130\n(I1\n(I2\ntp131\ng19\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np132\ntp133\nbssg94\ng9\n(g10\n(I0\ntp134\ng12\ntp135\nRp136\n(I1\n(I3\ntp137\ng101\nI00\nS'\\x01\\x01\\x01'\np138\ntp139\nbsg106\ng9\n(g10\n(I0\ntp140\ng12\ntp141\nRp142\n(I1\n(I3\nI3\ntp143\ng19\nI00\nS'\\xf8SCne\\xcb\\t@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\xf5SCne\\xcb\\xf9\\xbf\\xabn\\xa8x\\xb5V\\x06@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00b\\x02ww%\\xbc\\xb6<\\xd7\\x81E\\x04e\\xb0\\xc3<\\x05e\\xc7\\xa0X\\x9c\\x14@'\np144\ntp145\nbsg113\n(lp146\nsb.", 
+            "sigma": 0.1
+        }, 
+        "_launch_dir": "/scratch/users/ksb/fireworks/jobs/latticeopt_2017_10_11_17_00_01", 
+        "_tasks": [
+            {
+                "_fw_name": "{{standardScripts.OptimizeLattice}}"
+            }
+        ]
+    }
+}

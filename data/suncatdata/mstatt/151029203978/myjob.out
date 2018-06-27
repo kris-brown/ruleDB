@@ -1,0 +1,4 @@
+2017-11-09 21:14:06,033 INFO Hostname/IP lookup (this will take a few seconds)
+2017-11-09 21:14:06,035 INFO Launching Rocket
+2017-11-09 21:14:06,296 INFO RUNNING fw_id: 1203 in directory: /scratch/users/mstatt/fireworks/jobs/relax_2017_11_09_16_10_51
+2017-11-09 21:14:06,299 INFO Task started: {{standardScripts.Relax}}.

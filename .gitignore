@@ -14,3 +14,9 @@ cabal.sandbox.config
 *.aux
 *.hp
 .stack-work/
+
+data/\.DS_Store
+
+*.pyc
+
+\.DS_Store

@@ -1,0 +1,121 @@
+{
+    "name": "relax", 
+    "archived_launches": [
+        {
+            "fworker": {
+                "category": "", 
+                "query": "{}", 
+                "name": "sherlock", 
+                "env": {}
+            }, 
+            "trackers": [], 
+            "ip": "10.210.28.248", 
+            "fw_id": 2677, 
+            "state": "FIZZLED", 
+            "host": "sh-26-9.local", 
+            "launch_dir": "/scratch/users/mstatt/fireworks/jobs/relax_2017_11_12_15_29_17", 
+            "action": null, 
+            "launch_id": 2524, 
+            "state_history": [
+                {
+                    "updated_on": "2017-11-12T23:29:22.341626", 
+                    "state": "RESERVED", 
+                    "reservation_id": "18191006", 
+                    "created_on": "2017-11-12T23:29:22.341619"
+                }, 
+                {
+                    "updated_on": "2017-11-13T09:32:58.379483", 
+                    "state": "RUNNING", 
+                    "created_on": "2017-11-13T07:32:58.293795"
+                }, 
+                {
+                    "state": "FIZZLED", 
+                    "created_on": "2017-11-13T17:36:07.264773"
+                }
+            ]
+        }
+    ], 
+    "fw_id": 2677, 
+    "state": "RUNNING", 
+    "created_on": "2017-11-12T23:29:17.797766", 
+    "launches": [
+        {
+            "fworker": {
+                "category": "", 
+                "query": "{}", 
+                "name": "sherlock", 
+                "env": {}
+            }, 
+            "trackers": [], 
+            "ip": "10.210.29.120", 
+            "fw_id": 2677, 
+            "state": "RUNNING", 
+            "host": "sh-22-26.local", 
+            "launch_dir": "/scratch/users/mstatt/fireworks", 
+            "action": null, 
+            "launch_id": 2873, 
+            "state_history": [
+                {
+                    "updated_on": "2017-11-13T17:36:56.444267", 
+                    "state": "RESERVED", 
+                    "reservation_id": "18198660", 
+                    "created_on": "2017-11-13T17:36:56.444259"
+                }, 
+                {
+                    "updated_on": "2017-11-13T17:39:09.202972", 
+                    "state": "RUNNING", 
+                    "created_on": "2017-11-13T17:39:09.202968"
+                }
+            ]
+        }
+    ], 
+    "updated_on": "2017-11-13T17:39:09.205083", 
+    "spec": {
+        "_queueadapter": {
+            "ntasks_per_node": 16, 
+            "_fw_name": "CommonAdapter", 
+            "rocket_launch": "cd /scratch/users/mstatt/fireworks;rlaunch singleshot", 
+            "_fw_q_type": "SLURM", 
+            "queue": "iric", 
+            "logdir": "/scratch/users/mstatt/fireworks/logs/", 
+            "nodes": 1, 
+            "pre_rocket": "source /scratch/PI/suncat/sw/env.bash;source ~/.bashrc", 
+            "walltime": "04:00:00"
+        }, 
+        "_fworker": "sherlock", 
+        "params": {
+            "kpts": "[4, 4, 1]", 
+            "jobkind": "relax", 
+            "xc": "RPBE", 
+            "nbands": -20, 
+            "facet": "[1, 1, 1]", 
+            "dftcode": "quantumespresso", 
+            "dwrat": 10, 
+            "kptden": null, 
+            "dipole": true, 
+            "econv": 1e-05, 
+            "kwargs": "{\"job_name\": \"Mg_zincblende-unit_1.1.1_top\"}", 
+            "adsorbates": "{}", 
+            "spinpol": false, 
+            "maxstep": 200, 
+            "parent": 135, 
+            "fmax": 0.05, 
+            "mixing": 0.1, 
+            "dw": 5000, 
+            "psp": "gbrv15pbe", 
+            "structure": "zincblende-unit", 
+            "pw": 500, 
+            "kind": "surface", 
+            "nmix": 10, 
+            "project": "{\"facet\": \"1.1.1\", \"jobtype\": \"relax\", \"element\": \"Mg\", \"project\": \"Nitrides\", \"system_type\": \"surface\", \"side\": \"top\", \"structure\": \"zincblende-unit\"}", 
+            "inittraj_pckl": "ccopy_reg\n_reconstructor\np0\n(case.atoms\nAtoms\np1\nc__builtin__\nobject\np2\nNtp3\nRp4\n(dp5\nS'info'\np6\n(dp7\nsS'_celldisp'\np8\ncnumpy.core.multiarray\n_reconstruct\np9\n(cnumpy\nndarray\np10\n(I0\ntp11\nS'b'\np12\ntp13\nRp14\n(I1\n(I3\nI1\ntp15\ncnumpy\ndtype\np16\n(S'f8'\np17\nI0\nI1\ntp18\nRp19\n(I3\nS'<'\np20\nNNNI-1\nI-1\nI0\ntp21\nbI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np22\ntp23\nbsS'_calc'\np24\nNsS'arrays'\np25\n(dp26\nS'positions'\np27\ng9\n(g10\n(I0\ntp28\ng12\ntp29\nRp30\n(I1\n(I40\nI3\ntp31\ng19\nI00\nS'\\x81\\x95C\\x8bl\\xe7\"@\\x88\\x16\\xd9\\xce\\xf7\\xd3\\x15@\\x00\\x00\\x00\\x00\\x00\\xc0%@<\\xdfO\\x8d\\x97\\xee\\x1e@\\xd8\\xa3p=\\n\\xd7\\x03@\\x00\\x00\\x00\\x00\\x00\\xc0%@\\x8f\\xc2\\xf5(\\\\\\x0f\\x18@\\x88\\x16\\xd9\\xce\\xf7\\xd3\\x15@\\x00\\x00\\x00\\x00\\x00\\xc0%@\\xc8v\\xbe\\x9f\\x1a/\\x11@\\xd8\\xa3p=\\n\\xd7\\x03@\\x00\\x00\\x00\\x00\\x00\\xc0%@\\xc8v\\xbe\\x9f\\x1a/\\x11@\\\\\\x8f\\xc2\\xf5(\\xdc\\x11@\\x80\\x95C\\x8bl\\'\\'@<\\xdfO\\x8d\\x97\\xee\\x1e@\\\\\\x8f\\xc2\\xf5(\\xdc\\x11@\\x80\\x95C\\x8bl\\'\\'@\\x8f\\xc2\\xf5(\\\\\\x0f\\x18@\\x04+\\x87\\x16\\xd9\\xce\\xf7?\\x80\\x95C\\x8bl\\'\\'@9\\xb4\\xc8v\\xbe\\x9f\\x04@\\x04+\\x87\\x16\\xd9\\xce\\xf7?\\x80\\x95C\\x8bl\\'\\'@<\\xdfO\\x8d\\x97\\xee\\x1e@\\\\\\x8f\\xc2\\xf5(\\xdc\\x11@\\xea&1\\x08\\xac\\\\+@\\x8f\\xc2\\xf5(\\\\\\x0f\\x18@\\x04+\\x87\\x16\\xd9\\xce\\xf7?\\xea&1\\x08\\xac\\\\+@\\xc8v\\xbe\\x9f\\x1a/\\x11@\\\\\\x8f\\xc2\\xf5(\\xdc\\x11@\\xea&1\\x08\\xac\\\\+@9\\xb4\\xc8v\\xbe\\x9f\\x04@\\x04+\\x87\\x16\\xd9\\xce\\xf7?\\xea&1\\x08\\xac\\\\+@\\xc8v\\xbe\\x9f\\x1a/\\x11@`9\\xb4\\xc8v\\xbe\\xdf?j\\xbct\\x93\\x18\\xc4,@\\x8f\\xc2\\xf5(\\\\\\x0f\\x18@.\\xb2\\x9d\\xef\\xa7\\xc6\\x0b@j\\xbct\\x93\\x18\\xc4,@9\\xb4\\xc8v\\xbe\\x9f\\x04@.\\xb2\\x9d\\xef\\xa7\\xc6\\x0b@j\\xbct\\x93\\x18\\xc4,@\\xb0rh\\x91\\xed|\\xeb?`9\\xb4\\xc8v\\xbe\\xdf?j\\xbct\\x93\\x18\\xc4,@\\\\\\x8f\\xc2\\xf5(\\\\\\x11@P\\x8d\\x97n\\x12\\x83\\xe0?\\xf0\\xa7\\xc6K7i0@\\xc4 \\xb0rh\\x11\\x18@\\xdc\\xf9~j\\xbct\\x0b@\\x81\\x95C\\x8blg0@P\\xb8\\x1e\\x85\\xebQ\\xe8? Zd;\\xdfO\\xe1??5^\\xbaIl0@\\x91\\xed|?5^\\x04@\\x03+\\x87\\x16\\xd9\\xce\\x0b@\\x89A`\\xe5\\xd0b0@fffff\\xe6\\x1e@\\xe2z\\x14\\xaeG\\xe1\\x03@\\xf2\\xd2Mb\\x10\\x981@\\x8f\\xc2\\xf5(\\\\\\x0f\\x18@H\\xe1z\\x14\\xae\\xc7\\x15@t\\x93\\x18\\x04V\\xae1@n\\x12\\x83\\xc0\\xca\\xe1\"@w\\xbe\\x9f\\x1a/\\xdd\\x15@P\\x8d\\x97n\\x12\\xa31@\\x1a/\\xdd$\\x06\\x01\\x11@\\xc1\\xca\\xa1E\\xb6\\xf3\\x03@sh\\x91\\xed|\\x7f1@n\\x12\\x83\\xc0\\xca\\xa1\\x04@X\\x0e-\\xb2\\x9d\\xef\\xf7?\\xbct\\x93\\x18\\x04V2@\\x10X9\\xb4\\xc8\\xf6\\x1e@}?5^\\xba\\xc9\\x11@\\xc0\\xca\\xa1E\\xb6s2@\\x83\\xc0\\xca\\xa1E\\xb6\\x17@\\x0c\\xd7\\xa3p=\\n\\xf9?\\x08\\xac\\x1cZd\\x9b2@\\xd9\\xce\\xf7S\\xe3%\\x11@\\x08\\xac\\x1cZd\\xbb\\x11@F\\xb6\\xf3\\xfd\\xd4X2@\\xc4 \\xb0rh\\x91\\x0e@\\xdc\\xf9~j\\xbct\\t@\\xca\\xa1E\\xb6\\xf3\\x9d7@\\xea&1\\x08\\xac\\x9c\\x16@`\\xe5\\xd0\"\\xdb\\xf9\\xfe?\\x9a\\x99\\x99\\x99\\x99\\x994@\\x83\\xc0\\xca\\xa1E\\xb6\\x16@\\x8cl\\xe7\\xfb\\xa9q\\x16@\\xb6\\xf3\\xfd\\xd4x\\t6@9\\xb4\\xc8v\\xbe\\x1f @\\x92\\xed|?5^\\x12@\"\\xdb\\xf9~j\\xfc4@\\xbe\\x9f\\x1a/\\xdd$\\x13@T\\xb8\\x1e\\x85\\xebQ\\xf6?`\\xe5\\xd0\"\\xdby6@\\xa6\\x9b\\xc4 \\xb0r\\x19@\\x03+\\x87\\x16\\xd9\\xce\\x0b@D\\x8bl\\xe7\\xfb\\xc95@\\x84\\xebQ\\xb8\\x1e\\x85\\xf7?d;\\xdfO\\x8d\\x97\\xfa?\\x0c\\x02+\\x87\\x16\\x198@J\\x0c\\x02+\\x87\\x96\\x1c@\\x08V\\x0e-\\xb2\\x9d\\xe7?\\xf8S\\xe3\\xa5\\x9b\\x845@#\\xdb\\xf9~j|!@\\x98n\\x12\\x83\\xc0J\\x15@\\x0c\\x02+\\x87\\x16\\x995@\\xdb\\xf9~j\\xbct\\x06@`9\\xb4\\xc8v\\xbe\\xdf?\\xdd$\\x06\\x81\\x95\\xc36@5^\\xbaI\\x0c\\x02\\t@(1\\x08\\xac\\x1cZ\\t@\\x9c\\xc4 \\xb0r\\x888@X9\\xb4\\xc8v\\xbe\\x1a@\\xb8\\xf3\\xfd\\xd4x\\xe9\\xfe?\\xecQ\\xb8\\x1e\\x85+7@'\np32\ntp33\nbsS'numbers'\np34\ng9\n(g10\n(I0\ntp35\ng12\ntp36\nRp37\n(I1\n(I40\ntp38\ng16\n(S'i8'\np39\nI0\nI1\ntp40\nRp41\n(I3\nS'<'\np42\nNNNI-1\nI-1\nI0\ntp43\nbI00\nS'\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np44\ntp45\nbssS'_pbc'\np46\ng9\n(g10\n(I0\ntp47\ng12\ntp48\nRp49\n(I1\n(I3\ntp50\ng16\n(S'b1'\np51\nI0\nI1\ntp52\nRp53\n(I3\nS'|'\np54\nNNNI-1\nI-1\nI0\ntp55\nbI00\nS'\\x01\\x01\\x01'\np56\ntp57\nbsS'_cell'\np58\ng9\n(g10\n(I0\ntp59\ng12\ntp60\nRp61\n(I1\n(I3\nI3\ntp62\ng19\nI00\nS'\\xe5\\xd0\"\\xdb\\xf9~\\x1b@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x80\\xe5\\xd0\"\\xdb\\xf9~\\x0b@\\x1dZd;\\xdf\\xcf\\x17@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x80\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x80-\\xb2\\x9d\\xef\\xa7\\xd6@@'\np63\ntp64\nbsS'_constraints'\np65\n(lp66\n(iase.constraints\nFixAtoms\np67\n(dp68\nS'index'\np69\ng9\n(g10\n(I0\ntp70\ng12\ntp71\nRp72\n(I1\n(I16\ntp73\ng41\nI00\nS'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x03\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x04\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x05\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x06\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x07\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\n\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0b\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0c\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\r\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0f\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\np74\ntp75\nbsS'removed_dof'\np76\nI48\nsbasb.", 
+            "sigma": 0.1
+        }, 
+        "_launch_dir": "/scratch/users/mstatt/fireworks/jobs/relax_2017_11_12_15_29_17", 
+        "_tasks": [
+            {
+                "_fw_name": "{{standardScripts.Relax}}"
+            }
+        ]
+    }
+}

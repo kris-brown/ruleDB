@@ -1,0 +1,15 @@
+#!/bin/bash -l
+
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=16
+#SBATCH --time=40:00:00
+#SBATCH --partition=owners,iric,normal
+#SBATCH --job-name=bulkmod
+#SBATCH --output=bulkmod-%j.out
+#SBATCH --error=bulkmod-%j.error
+
+source /scratch/PI/suncat/sw/env.bash;source ~/scripts/rc/RCsher.sh;export OMP_NUM_THREADS=1;export PYTHONPATH=/scratch/users/ksb/gpaw/ggafirst/install/lib/python2.7/site-packages:/scratch/users/ksb/gpaw/gpaw_sg15/lib/python2.7/site-packages:$PYTHONPATH;export PATH=/scratch/users/ksb/gpaw/ggafirst/install/bin:$PATH;export GPAW_SETUP_PATH=/scratch/users/ksb/gpaw/gpaw_sg15/norm_conserving_setups
+cd /scratch/users/ksb/fireworks/jobs/bulkmod_2017_10_15_22_39_43
+cd /scratch/users/ksb/fireworks;rlaunch singleshot --fw_id 1661
+
+# CommonAdapter (SLURM) completed writing Template
